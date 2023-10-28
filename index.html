@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="form-wrap">
+
+        <div id='customerSurvey'>
+
+            <form action="formSubmit()" id="formId">
+
+                <h1> Customer Survey Form </h1>
+
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id='name' placeholder="Name" class="form-control" required/>
+                        <small></small>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id='email' placeholder="Email" class="form-control" required/>
+                    </div>
+                    <div>
+                        <p>Is this first time You are using our products and services? </p>
+                        <input type="radio" name="choice1" value="Yes" required/> <label>Yes</label>
+                        <input type="radio" name="choice1" value="No" required/> <label>No</label>
+                    </div>
+
+                    <div>
+                        <p>Would you suggestion to your friends and colleagus? </p>
+                        <input type="radio" name="choice2" value="Yes" required/> <label>Yes</label>
+                        <input type="radio" name="choice2" value="No" required/> <label>No</label>
+                    </div>
+
+                    <div>
+                        <p>How satisfied are you with your company overall </p>
+                        <input type="radio" name="choice3" value="satisfied" /> <label>Satisfied</label>
+                        <input type="radio" name="choice3" value="undecided" /> <label>Undecided</label>
+                        <input type="radio" name="choice3" value="unsatisfied" /> <label>UnSatisfied</label>
+                    </div>
+
+                    <div>
+                        <p>Do you have suggestion to improve our services? </p>
+                        <textarea id="subject" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+            </form>
+          
+        </div>
+
+        <div id="displayWrap">
+            <h1> Your Detail </h1>
+            <h3 class="username">Your Name is : </h3>
+            <h3 class="useremail"> Your Email is : </h3>
+            <h5 class="userchoice1"> Is this first time You are using our products and services? </h5>
+            <h5 class="userchoice2"> Would you suggestion to your friends and colleagus? </h5>
+            <h5 class="userchoice3"> How satisfied are you with your company overall </h5>
+            <h5 class="userfeedback"> Your FeedBack is : </h5>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
